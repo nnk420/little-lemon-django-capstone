@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Little Lemon | Restaurant API</title>
+  <style>
+    :root { color-scheme: light; font-family: Arial, sans-serif; }
+    body { margin: 0; background: #f7f5ef; color: #26352b; }
+    header, footer { background: #26352b; color: #fff; padding: 1.25rem 7%; }
+    main { max-width: 900px; margin: 3rem auto; padding: 0 1.25rem; }
+    .panel { background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 3px 14px #00000012; }
+    a { color: #496b38; font-weight: 700; }
+    code { background: #eef0e8; padding: .15rem .35rem; border-radius: 4px; }
+    @media (max-width: 600px) { main { margin: 1.25rem auto; } header, footer { padding: 1rem 5%; } }
+  </style>
+</head>
+<body>
+  <header><h1>Little Lemon</h1><p>Fresh food, simple booking.</p></header>
+  <main>
+    <section class="panel">
+      <h2>Restaurant API</h2>
+      <p>This Django application provides menu and table-booking APIs.</p>
+      <ul>
+        <li><a href="/api/menu/">Browse menu items</a></li>
+        <li><a href="/api/bookings/">View table bookings</a></li>
+        <li><a href="/admin/">Open admin dashboard</a></li>
+      </ul>
+      <p>Use an API client such as Insomnia to create or update records. Write operations require a token.</p>
+      <p>Registration endpoint: <code>POST /api/auth/register/</code></p>
+      <p>Token endpoint: <code>POST /api/auth/token/</code></p>
+    </section>
+  </main>
+  <footer><p>Little Lemon Django REST Framework Capstone</p></footer>
+</body>
+</html>
